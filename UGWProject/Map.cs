@@ -1,4 +1,4 @@
-﻿using System;
+﻿﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,8 +14,8 @@ namespace UGWProject
         protected int mapY;
 
         public Map()
-        { 
-            levels = new Dictionary<int,string>();
+        {
+            levels = new Dictionary<int, string>();
         }
 
         public void LoadLevels()
@@ -24,7 +24,7 @@ namespace UGWProject
 
             lFiles = Directory.GetFiles(@".", "*level*");
 
-           // if (lFiles.Length == 0)
+            // if (lFiles.Length == 0)
             // {
             //      Write "no levels found" somewhere
             // }
@@ -38,22 +38,22 @@ namespace UGWProject
                 string lCheck = " "; //Tells when reader should stop reading
 
                 while ((lvlIn = lRead.ReadLine()) != null)
-                { 
+                {
                     //Check for characters
                     foreach (char c in lvlIn)
                     {
                         if (c == '@')
-                        { 
+                        {
                             //create player object at location
                         }
 
                         if (c == '_')
-                        { 
+                        {
                             //create block at location
                         }
 
                         if (c == '|')
-                        { 
+                        {
                             //Create wall at location
                         }
 
@@ -64,7 +64,7 @@ namespace UGWProject
 
                         if (c == 'e')
                         {
-                         //mapY += particular amount;
+                            //mapY += particular amount;
                             //mapX = (negative increment number);
                         }
 

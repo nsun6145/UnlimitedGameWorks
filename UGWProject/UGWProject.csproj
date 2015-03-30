@@ -41,6 +41,7 @@
     <Compile Include="Enemy.cs" />
     <Compile Include="Game1.cs" />
     <Compile Include="GamePiece.cs" />
+    <Compile Include="Map.cs" />
     <Compile Include="Memories.cs" />
     <Compile Include="MoveBlock.cs" />
     <Compile Include="PhaseBlock.cs" />
